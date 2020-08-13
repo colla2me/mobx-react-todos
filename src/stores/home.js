@@ -1,6 +1,6 @@
 import { observable, action } from 'mobx';
 
-class HomeStore {
+export default class HomeStore {
   @observable counter = 1;
 
   @action add() {
@@ -11,5 +11,3 @@ class HomeStore {
     this.counter--;
   }
 }
-
-export default new HomeStore();

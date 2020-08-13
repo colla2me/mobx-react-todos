@@ -7,11 +7,11 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 import { Provider } from 'mobx-react';
-import HomeStore from './stores/home'
+import stores from './stores'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider HomeStore={HomeStore}>
+    <Provider {...stores}>
       <Router>
         <App />
       </Router>
