@@ -6,16 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router
 } from 'react-router-dom';
-import { Provider } from 'mobx-react';
-import stores from './stores'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider {...stores}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
